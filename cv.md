@@ -2,7 +2,7 @@
 
 ### Anton Gerasimov
 ### Contacts:
-[Telegram](https://t.me/gerasimovtltsu)
+[Telegram link](https://t.me/gerasimovtltsu)
 [Discord](https://discordapp.com/users/912402722853101578/)
 ### Brief information about yourself
 I want to become a Javascript developer. I quickly learn new material. For a long time I developed a Django backend for myself. There is a desire to learn JS.
