@@ -5,3 +5,8 @@ body {
 h1 {
   color: #eee;
 }
+
+a {
+  color: #eee;
+  text-derocation: none;
+}
