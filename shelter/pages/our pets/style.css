@@ -1,0 +1,311 @@
+@charset "UTF-8";
+header {
+  width: 100%;
+  height: 120px;
+  display: -ms-grid;
+  display: grid;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  width: 1200px;
+  height: 843px;
+  align-self: flex-end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-columns: 504px 1fr;
+      grid-template-columns: 504px 1fr;
+      grid-template-areas: "header header";
+  -ms-grid-rows: 60px;
+      grid-template-rows: 60px;
+}
+
+header .content .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 184px 570px 1fr;
+      grid-template-columns: 184px 570px 1fr;
+}
+
+header .content .header .menu > a.aboutshelter {
+  color: #fafafa;
+  border-bottom: 3px solid #f1cdb3;
+}
+
+header .content .header .logo a {
+  text-decoration: none;
+}
+
+header .content .header .logo .title {
+  font-family: Georgia;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35.2px;
+  letter-spacing: 6%;
+  color: #545454;
+  margin-bottom: 10px;
+}
+
+header .content .header .logo .subtitle {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14.95px;
+  letter-spacing: 10%;
+  color: #292929;
+}
+
+header .content .header .menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  justify-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content .header .menu a {
+  color: #545454;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+header .content .header .menu a:hover {
+  color: #545454;
+}
+
+header .content .header .menu > a.aboutshelter {
+  color: #292929;
+  border-bottom: 3px solid #f1cdb3;
+}
+
+.info {
+  background-color: #f6f6f6;
+}
+
+/* Our Friends */
+.ourFriends .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  -ms-grid-columns: 1fr 400px 1fr;
+      grid-template-columns: 1fr 400px 1fr;
+}
+
+.ourFriends .header h3 {
+  display: -ms-grid;
+  display: grid;
+  font-family: Georgia, "sans-serif";
+  font-weight: 400;
+  color: #545454;
+  font-size: 35px;
+  width: 400px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.ourFriends .cards-container {
+  width: 1200px;
+  height: 930px;
+  margin: 45px;
+}
+
+.ourFriends .cards-container .cards1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 30px;
+      grid-template-rows: 1fr 30px;
+}
+
+.ourFriends .cards-container .cards1 .card {
+  width: 270px;
+  height: 435px;
+  border-radius: 9px;
+  gap: 30px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.ourFriends .cards-container .cards1 .card .cr-1 img {
+  width: 270px;
+  height: 270px;
+  border-radius: 9px 9px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ourFriends .cards-container .cards1 .card .cr-1 p {
+  font-family: Georgia, "sans-serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22.72px;
+  color: #545454;
+}
+
+.ourFriends .cards-container .cards1 .card .cr-1 button {
+  width: 187px;
+  height: 52px;
+  background-color: #fafafa;
+  color: #292929;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  padding: 15px 45px;
+  font-family: Georgia, "sans-serif";
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 6%;
+}
+
+.ourFriends .cards-container .cards1 .card:hover {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 15px #c2c2c2;
+          box-shadow: 0 0 15px #c2c2c2;
+  cursor: pointer;
+}
+
+.ourFriends .cards-container .cards1 .card .cr-1 button:hover {
+  background-color: #f1cdb3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.ourFriends .cards-container .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.ourFriends .cards-container .navigation button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* выравнивает текст в кнопках по вертикали */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* выравнивает текст в кнопках по горизонтали */
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  margin-right: 20px;
+}
+
+.ourFriends .cards-container .navigation button a {
+  font-family: "Georgia", "sans-serif";
+  text-decoration: none;
+  color: #292929;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.ourFriends .cards-container .navigation button.pag.disabled {
+  border: 2px solid #cdcdcd;
+}
+
+.ourFriends .cards-container .navigation button a.disabled {
+  color: #cdcdcd;
+  cursor: default;
+}
+
+.ourFriends .cards-container .navigation button.current {
+  background-color: #f1cdb3;
+  border: none;
+}
+
+.ourFriends .cards-container .navigation button.pag.active {
+  border: 2px solid #f1cdb3;
+}
+
+.ourFriends .cards-container .navigation button a.active {
+  color: #292929;
+}
+
+footer {
+  width: 100%;
+  height: 350px;
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%) #211f20;
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .info {
+  display: -ms-grid;
+  display: grid;
+  align-self: flex-end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 1200px;
+  -ms-grid-columns: 2fr 2fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr;
+  -ms-grid-rows: 315px;
+      grid-template-rows: 315px;
+}
+
+footer .info .cl-1 h3 {
+  font-family: Georgia, "sans-serif";
+  font-weight: 400;
+  font-size: 35px;
+  color: #ffffff;
+  width: 250px;
+  margin-top: 30px;
+}
+
+footer .info .cl-1 .icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 3fr;
+      grid-template-columns: 1fr 1fr 3fr;
+  margin-top: 45px;
+}
+
+footer .info .cl-1 .icons h4 {
+  font-family: Georgia, "sans-serif";
+  font-weight: 400;
+  font-size: 20px;
+  color: #f1cdb3;
+  width: 250px;
+}
+
+footer .info .cl-1 .icons h4 a {
+  text-decoration: none;
+  color: #f1cdb3;
+}
+/*# sourceMappingURL=style.css.map */

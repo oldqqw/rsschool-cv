@@ -1,0 +1,702 @@
+$color-primary:#F1CDB3;
+$color-light-xl:#FFFFFF;
+$dark-color-s:#CDCDCD;
+$color-light-s:#FAFAFA;
+$color-dark-s:#CDCDCD;
+$color-dark-3xl:#292929;
+$color-dark-l:#545454;
+$color-dark-xl:#4C4C4C;
+$color-light-l:#F6F6F6;
+$color-dark-m:#B2B2B2;
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    width: 100%;
+    height: 908px;
+    display: grid;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  }
+  
+  .content {
+    display: grid;
+    width: 1200px;
+    height: 843px;
+    align-self: flex-end;
+    justify-self: center;
+    grid-template-columns: 504px 1fr;
+    grid-template-areas: "header header" "info image";
+    grid-template-rows: 60px;
+  }
+  
+  header .content {
+    .header {
+      grid-area: header;
+      display: grid;
+      grid-template-columns: 184px 570px 1fr;
+    }
+  
+    .notOnly {
+      grid-area: info;
+  
+      h2 {
+        font-family: Georgia;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 57.2px;
+        color: $color-light-xl;
+        margin-top: 230px;
+      }
+  
+      p {
+        font-family: Arial;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: $color-dark-s;
+        width: 460px;
+        margin-top: 60px;
+      }
+  
+      button {
+        width: 207px;
+        height: 52px;
+        background-color: $color-primary;
+        border-radius: 100px;
+        border: none;
+        font-family: Georgia;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22.1px;
+        color: $color-dark-3xl;
+        margin-top: 45px;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .image {
+      grid-area: image;
+      display: grid;
+      align-items: end;
+    }
+  
+    .header {
+      .logo {
+        .title {
+          font-family: Georgia;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 35.2px;
+          letter-spacing: 6%;
+          color: $color-primary;
+          margin-bottom: 10px;
+  
+          a {
+            text-decoration: none;
+            color: $color-primary;
+          }
+        }
+  
+        .subtitle {
+          font-family: Arial;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 14.95px;
+          letter-spacing: 10%;
+          color: $color-light-xl;
+        }
+      }
+  
+      .menu {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-items: end;
+        align-items: center;
+  
+        a {
+          color: $dark-color-s;
+          font-family: Arial;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 24px;
+          text-decoration: none;
+  
+          &:hover {
+            color: #FFFFFF;
+          }
+        }
+  
+        > a.aboutshelter {
+          color: $color-light-s;
+          border-bottom: 3px solid $color-primary;
+        }
+      }
+    }
+  }
+  
+  /* Интерактивный курсор для кнопки Make a friend */
+  
+  .notOnly {
+    display: grid;
+    width: 100%;
+    height: 588px;
+  
+    .notOnlycontent {
+      display: grid;
+      width: 845px;
+      height: 408px;
+      justify-self: center;
+      align-self: center;
+      grid-template-columns: 425px 1fr;
+      grid-template-rows: 408px;
+  
+      .info {
+        h3 {
+          display: flex;
+          align-items: center;
+          width: 370px;
+          margin-top: 22px;
+          font-family: Georgia;
+          font-weight: 400;
+          font-size: 35px;
+          line-height: 130%;
+          letter-spacing: 0.06em;
+          color: $color-dark-l;
+        }
+  
+        p {
+          font-family: Arial;
+          font-weight: 400;
+          font-size: 15px;
+          margin-top: 35px;
+          color: $color-dark-xl;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  
+  /* блок About */
+  
+  .about {
+    display: grid;
+    width: 100%;
+    height: 588px;
+  
+    .contentabout {
+      display: grid;
+      width: 845px;
+      height: 487px;
+      justify-self: center;
+      align-self: center;
+      grid-template-columns: 425px 1fr;
+      grid-template-rows: 407px;
+  
+      .info {
+        h3 {
+          font-family: Georgia, 'sans-serif';
+          font-weight: 400;
+          font-size: 35px;
+          width: 300px;
+          margin-top: 22px;
+          color: $color-dark-l;
+        }
+  
+        p {
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 400;
+          font-size: 15px;
+          margin-top: 35px;
+          color: $color-dark-xl;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  
+  /* Блок ourFriends */
+  
+  .ourFriends {
+    display: grid;
+    width: 100%;
+    height: 877px;
+    background-color: $color-light-l;
+  
+    .info {
+      display: grid;
+      align-self: center;
+      justify-self: center;
+      width: 1200px;
+      height: 689px;
+      grid-template-columns: 53px 1fr 1fr 1fr 53px;
+      grid-template-rows: 85px 554px 53px;
+      grid-template-areas: "header header header header header" "button_arrows card card1 card2 button_arrows2" "button button button button button";
+    }
+  
+    .header {
+      display: grid;
+      grid-area: header;
+      grid-template-columns: 1fr 400px 1fr;
+  
+      h3 {
+        display: grid;
+        font-family: Georgia, 'sans-serif';
+        font-weight: 400;
+        color: $color-dark-l;
+        font-size: 35px;
+        width: 400px;
+        text-align: center;
+        align-content: center;
+      }
+    }
+  
+    .button_arrows {
+      display: grid;
+      grid-area: button_arrows;
+      width: 52px;
+      height: 52px;
+      align-self: center;
+      padding: 15px 16px;
+      border: 2px solid $color-primary;
+      box-sizing: border-box;
+      border-radius: 100px;
+    }
+  }
+  
+  /* Стрелки слайдера */
+  
+  .button_arrows2 {
+    display: grid;
+    grid-area: button_arrows;
+    width: 52px;
+    height: 52px;
+    align-self: center;
+    padding: 15px 16px;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+  }
+  
+  .button_arrows:hover, .button_arrows2:hover {
+    cursor: pointer;
+  }
+  
+  .card {
+    grid-area: card;
+    display: grid;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .cr-1 {
+      display: grid;
+      justify-self: center;
+      align-self: center;
+      width: 270px;
+      height: 435px;
+      background-color: $color-light-s;
+      border-radius: 9px;
+
+      &:hover {
+        background-color: $color-light-xl;
+        box-shadow: 0 0 15px #c2c2c2;
+      }
+
+      img {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+      }
+
+      p {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        font-family: Georgia, 'sans-serif';
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      button {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        align-content: center;
+        border-radius: 100px;
+        font-family: Georgia, 'sans-serif';
+        font-weight: 400;
+        background-color: $color-light-s;
+        border: 2px solid $color-primary;
+        width: 197px;
+        height: 52px;
+        font-size: 17px;
+
+        &:hover {
+          background-color: $color-primary;
+          color: $color-light-xl;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  .card1 {
+    grid-area: card1;
+    display: grid;
+
+    .cr-1 {
+      display: grid;
+      justify-self: center;
+      align-self: center;
+      width: 270px;
+      height: 435px;
+      background-color: $color-light-s;
+      border-radius: 9px;
+
+      &:hover {
+        background-color: $color-light-xl;
+        box-shadow: 0 0 15px #c2c2c2;
+        cursor: pointer;
+      }
+
+      img {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+      }
+
+      p {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        font-family: Georgia, 'sans-serif';
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      button {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        align-content: center;
+        border-radius: 100px;
+        font-family: Georgia, 'sans-serif';
+        font-weight: 400;
+        background-color: $color-light-s;
+        border: 2px solid $color-primary;
+        width: 197px;
+        height: 52px;
+        font-size: 17px;
+
+        &:hover {
+          background-color: $color-primary;
+          color: $color-light-xl;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .card2 {
+    grid-area: card2;
+    display: grid;
+
+    .cr-2 {
+      display: grid;
+      justify-self: center;
+      align-self: center;
+      width: 270px;
+      height: 435px;
+      background-color: $color-light-s;
+      border-radius: 9px;
+
+      &:hover {
+        background-color: $color-light-xl;
+        box-shadow: 0 0 15px #c2c2c2;
+        cursor: pointer;
+      }
+
+      img {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+      }
+
+      p {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        font-family: Georgia, 'sans-serif';
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      button {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        align-content: center;
+        border-radius: 100px;
+        font-family: Georgia, 'sans-serif';
+        font-weight: 400;
+        background-color: $color-light-s;
+        border: 2px solid $color-primary;
+        width: 197px;
+        height: 52px;
+        font-size: 17px;
+
+        &:hover {
+          background-color: $color-primary;
+          color: $color-light-xl;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .button_arrows2 {
+    grid-area: button_arrows2;
+    align-self: center;
+  }
+
+  .button {
+    display: grid;
+    grid-area: button;
+
+    button {
+      display: grid;
+      align-self: center;
+      justify-self: center;
+      width: 261px;
+      height: 52px;
+      border-radius: 100px;
+      border: none;
+      background-color: $color-primary;
+      align-content: center;
+      font-size: 17px;
+      font-family: Georgia, 'sans-serif';
+      font-weight: 400;
+
+      a {
+        text-decoration: none;
+        color: $color-dark-3xl;
+      }
+
+      &:hover {
+        background-color: $color-light-s;
+        color: $color-dark-3xl;
+        border: 1px solid $color-primary;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  /* Блок help */
+  
+  .help {
+    display: grid;
+    width: 100%;
+    height: 611px;
+  
+    .info {
+      display: grid;
+      height: 420px;
+      align-self: center;
+      justify-content: center;
+  
+      .header {
+        display: grid;
+        width: 100%;
+        height: 143px;
+        grid-template-columns: 1fr 300px 1fr;
+  
+        h3 {
+          display: grid;
+          text-align: center;
+          font-size: 35px;
+          font-family: Georgia, 'sans-serif';
+          font-weight: 400;
+          color: $color-dark-l;
+        }
+      }
+  
+      .icons {
+        width: 100%;
+        height: 114px;
+        display: grid;
+        grid-template-columns: 82px 390px 63px 390px 100px;
+        grid-template-rows: 114px;
+  
+        .bl-1 {
+          display: grid;
+          align-content: space-between;
+          justify-self: center;
+  
+          svg {
+            justify-self: center;
+          }
+  
+          p {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 400;
+            color: $color-dark-l;
+          }
+        }
+      }
+  
+      .icons2 {
+        width: 100%;
+        height: 114px;
+        display: grid;
+        grid-template-columns: 25% 15% 35% 20%;
+        margin-top: 30px;
+  
+        .bl-1 {
+          display: grid;
+          align-content: space-between;
+          justify-self: center;
+  
+          svg {
+            justify-self: center;
+          }
+  
+          p {
+            font-size: 20px;
+            text-align: center;
+            font-weight: 400;
+            color: $color-dark-l;
+          }
+        }
+      }
+    }
+  }
+  
+  /* Блок In Addiction */
+  
+  .inAddiction {
+    width: 100%;
+    height: 462px;
+    display: grid;
+    background-color: $color-light-l;
+  
+    .info {
+      width: 900px;
+      height: 270px;
+      display: grid;
+      align-self: center;
+      justify-content: center;
+      grid-template-columns: 525px 1fr;
+  
+      .contents {
+        h3 {
+          width: 300px;
+          height: 90px;
+          font-weight: 400;
+          font-size: 35px;
+          font-family: Georgia, 'sans-serif';
+          line-height: 45.5px;
+          letter-spacing: 6%;
+          color: $color-dark-l;
+        }
+  
+        h5 {
+          font-size: 15px;
+          font-weight: 400;
+          font-family: Georgia, 'sans-serif';
+          color: $color-dark-l;
+          margin-top: 30px;
+        }
+  
+        .pay-card {
+          width: 320px;
+          height: 43px;
+          background-color: $color-primary;
+          display: grid;
+          grid-template-columns: 15% 85%;
+          border-radius: 9px;
+          margin-top: 20px;
+  
+          svg {
+            display: grid;
+            align-self: center;
+            justify-self: center;
+          }
+  
+          a {
+            display: grid;
+            align-self: center;
+            justify-self: center;
+            font-size: 20px;
+            font-family: Georgia, 'sans-serif';
+            font-weight: 400;
+            color: $color-dark-l;
+            text-decoration: none;
+          }
+        }
+  
+        p {
+          margin-top: 20px;
+          font-size: 12px;
+          font-family: Arial, 'sans-serif';
+          font-weight: 400;
+          font-style: italic;
+          line-height: 18px;
+          color: $color-dark-m;
+        }
+      }
+    }
+  }
+  
+  footer {
+    width: 100%;
+    height: 350px;
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) #211F20;
+    display: grid;
+  
+    .info {
+      display: grid;
+      align-self: flex-end;
+      justify-self: center;
+      width: 1200px;
+      grid-template-columns: 2fr 2fr 1fr;
+      grid-template-rows: 315px;
+  
+      .cl-1 {
+        h3 {
+          font-family: Georgia, 'sans-serif';
+          font-weight: 400;
+          font-size: 35px;
+          color: $color-light-xl;
+          width: 250px;
+          margin-top: 30px;
+        }
+  
+        .icons {
+          display: grid;
+          grid-template-columns: 1fr 1fr 3fr;
+          margin-top: 45px;
+  
+          h4 {
+            font-family: Georgia, 'sans-serif';
+            font-weight: 400;
+            font-size: 20px;
+            color: $color-primary;
+            width: 250px;
+  
+            a {
+              text-decoration: none;
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
